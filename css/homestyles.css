@@ -70,6 +70,27 @@ header {
     position: relative;
 }
 
+.active-nav:hover {
+    opacity: 1;
+}
+
+.active-nav::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+}
+
+.active-nav:before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.active-nav:hover::before {
+    width: 100%;
+}
+
 .active-nav::before {
     content: "";
     display: block;
