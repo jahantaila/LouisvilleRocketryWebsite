@@ -293,7 +293,7 @@ img {
 #footer {
     background: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 
@@ -399,4 +399,12 @@ img {
     #about h3 {
         font-size: 17px;
     }
+}
+
+#footer .shoutout {
+    color: gray;
+    position: absolute;
+    bottom: 1;
+    font-size: 12px;
+    right: 22px;
 }
