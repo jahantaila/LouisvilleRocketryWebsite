@@ -261,6 +261,10 @@ img {
     /* border: 1px solid red; */
 }
 
+#competetivelabel{
+    color: red;
+}
+
 #about h3 {
     color: var(--red);
     font-size: 18px;

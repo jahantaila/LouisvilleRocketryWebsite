@@ -1,0 +1,26 @@
+new TypeIt("#competetivelabel", { 
+  lifeLike: false, 
+  speed: 0 
+})
+.type("c")
+.pause(160)
+.type("o")
+.pause(174)
+.type("m")
+.pause(377)
+.type("p")
+.pause(200)
+.type("e")
+.pause(344)
+.type("t")
+.pause(496)
+.type("i")
+.pause(169)
+.type("t")
+.pause(239)
+.type("i")
+.pause(288)
+.type("v")
+.pause(96)
+.type("e")
+.go();
