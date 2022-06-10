@@ -36,6 +36,7 @@ img {
 
 .btn-red {
     background-color: var(--red);
+    
 }
 
 .red-tag {
@@ -84,7 +85,7 @@ header {
 }
 
 .navItems li a:hover {
-    color: #fff;
+    color: red;
 }
 
 .active-nav {
@@ -110,7 +111,7 @@ header {
     transition: all 0.25s ease-in-out;
 }
 .border-red:hover {
-    background-color: #e1e1e12a;
+    background-color: red;
 }
 
 .scrolling-active {
@@ -152,9 +153,10 @@ header {
 }
 #hero p {
     color: #e1e1e1;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    line-height: 30px;
     width: 45%;
-    text-align: justify;
+    text-align: center;
     font-weight: 400;
     margin-bottom: 35px;
 }
@@ -174,6 +176,7 @@ header {
     background-color: rgb(8, 8, 8);
     color: white;
     z-index: 99;
+    
 }
 
 #mobile-nav ul {
@@ -369,7 +372,8 @@ header {
     }
     #hero p {
         width: 80% !important;
-    }
+
+    } 
 
     .active-nav::before {
         bottom: -5px;
