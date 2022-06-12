@@ -297,6 +297,9 @@ header {
     text-align: center;
     font-weight: 300;
 }
+
+
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
@@ -313,6 +316,11 @@ header {
     margin: 0 15px;
     color: #fff;
 }
+
+.footer-nav ul li a:hover{
+    color:red;
+}
+
 .footer-nav i {
     margin-right: 15px;
 }
