@@ -1,11 +1,11 @@
-
+// NEED TO FIX - WANT TYPING ANIMATION TO START WHEN USER SCROLLS TO THE ABOUT-US SECTION
 
 // window.addEventListener('scroll', function() {
 	var element = document.querySelector('#about-us');
 	var position = element.getBoundingClientRect();
 
 	// checking whether fully visible
-	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+	if(position.top >= 5 && position.bottom <= window.innerHeight) {
 		new TypeIt("#competetivetext", { 
       lifeLike: true, 
       speed: 0 
