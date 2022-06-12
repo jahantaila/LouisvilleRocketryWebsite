@@ -1,6 +1,7 @@
 // NEED TO FIX - WANT TYPING ANIMATION TO START WHEN USER SCROLLS TO THE ABOUT-US SECTION
-
+// __________________________________________________________________________________________
 // window.addEventListener('scroll', function() {
+  /*
 	var element = document.querySelector('#about-us');
 	var position = element.getBoundingClientRect();
 
@@ -39,6 +40,6 @@
 
 
 
-
+*/
 
 
