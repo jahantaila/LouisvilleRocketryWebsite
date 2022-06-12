@@ -20,6 +20,8 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--animate.style-->
 
+
+        <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script> <!--typeit.js-->
         <title>Louisville Rocketry | Home</title>
     </head>
     <body>
@@ -58,9 +60,14 @@
             </header>
         </div>
         <div id="hero">
+            <i
+                class="fa-solid fa-arrow-down fa-lg"
+                style="color: white; height: 30px; width: 30px"
+                id="bounce"
+            ></i>
             <h1><img src="./img/hero-text.png" alt=""  class="animate__animated animate__backInDown"/></h1>
-            <h2><img src="./img/hero-text2.png" alt="" class="animate__animated animate__jello"/></h2>
-            <p class="animate__animated animate__flip">
+            <h2><img src="./img/hero-text2.png" alt="" class="animate__animated animate__backInDown"/></h2>
+            <p class="animate__animated animate__fadeInUp">
                 We are a group of highschoolers passionate about creating
                 rockets and pursuing missions in aerospace engineering. We
                 emphasize core engineering skills and adaptive problem solving.
@@ -71,7 +78,8 @@
             <div id="about">
                 <div class="left">
                     <h3 class="red-tag">ABOUT US</h3>
-                    <h2>We launch competition and experimental rockets.</h2>
+                    <h2>We launch <span id = "competetivetext" style = "color: red; "><!--REPLACED--> </span> and experimental rockets.</h2>
+                    <script src="/js/competitiveanimation.js"></script>
                     <p>
                         Louisville Rocketry is a student-led engineering team at
                         duPont Manual High School. Founded in 2017, we are
@@ -126,6 +134,6 @@
             </div>
             <p>© 2022 Louisville Rocketry</p>
         </div>
-        <script src="./script.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>
