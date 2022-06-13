@@ -48,6 +48,10 @@ img {
     border: 1px solid var(--red);
 }
 
+.btn-gray:hover{
+    background: var(--red);
+}
+
 /* --- HEADER --- */
 #header {
     width: 100%;
@@ -429,6 +433,7 @@ header {
     .social-icons i {
         margin-left: 12px;
     }
+    
     #about .left {
         padding-right: 0px;
     }
