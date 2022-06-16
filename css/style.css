@@ -196,6 +196,7 @@ header {
     color:red !important; 
 }
 
+
 #mobile-nav {
     display: none;
     position: fixed;
@@ -415,13 +416,13 @@ header {
     position: relative;
 }
 .event-container {
-    width: 90%;
+    width: 85%;
     /* margin: 0 auto; */
     background: #1c1a1b;
     height: auto;
     /* margin-top: -200px; */
     position: absolute;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -20%);
     left: 50%;
     border-radius: 5px;
     padding: 40px 0;
@@ -560,6 +561,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 0;
 }
 .private-sponsor_details {
     width: 70%;
@@ -569,18 +571,21 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 90px;
+    z-index: 2;
 }
 
 .private-sponsor_details h3 {
     margin-bottom: 20px;
     font-size: 37px;
     font-weight: 500;
+    z-index: 2;
 }
 .private-sponsor_details p {
     font-size: 20px;
     letter-spacing: 1.1px;
     color: #e1e1e1;
     margin: 5px 0;
+    z-index: 2;
 }
 #sponsors-thanks {
     margin-top: 250px;
@@ -596,6 +601,67 @@ header {
 }
 #sponsors-thanks div img {
     margin: 0 25px;
+    z-index: 2;
+}
+
+/* ---- TEAM PAGE ----*/
+.team {
+    background: url("../img/team-hero.png") no-repeat center center/cover !important;
+}
+.team h3 {
+    font-size: 28px;
+    letter-spacing: 1.2px;
+}
+.team h1 {
+    color: white;
+    font-size: 58px;
+}
+.team p {
+    text-align: center !important;
+    font-size: 21px;
+}
+.team .btn {
+    margin-bottom: 70px;
+}
+
+/* --- MEET TEAM SECTION --- */
+#meet-team {
+    background: #121212;
+    color: white;
+    padding: 100px 0;
+}
+#meet-team h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.meet-team_members {
+    width: 65%;
+    margin: 0 auto;
+}
+.meet-team_members_member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.meet-team_members_member h4 {
+    font-size: 21px;
+}
+.meet-team_members_member .red-tag {
+    font-size: 15px;
+}
+.meet-team_members_member .left {
+    width: 28%;
+}
+
+.meet-team_members_member .right {
+    width: 72%;
+}
+.meet-team_members_member .right p {
+    font-size: 24px;
+    line-height: 37px;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
     header {
@@ -660,6 +726,9 @@ header {
     #sponsors-thanks div {
         flex-direction: column;
     }
+    .private-sponsor_details {
+        align-items: center;
+    }
 }
 @media screen and (max-width: 950px) {
     .navItems {
@@ -685,7 +754,6 @@ header {
         width: 70%;
         /* margin: 0 auto; */
     }
-
     #hero p {
         width: 58%;
     }
