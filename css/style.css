@@ -48,6 +48,10 @@ img {
     border: 1px solid var(--red);
 }
 
+.btn-gray:hover{
+    background-color: #e1e1e12a;
+}
+
 /* --- HEADER --- */
 #header {
     width: 100%;
@@ -186,6 +190,10 @@ header {
 
 #hamburger {
     display: none;
+}
+
+.navbar ul li a:hover {
+    color:red !important; 
 }
 
 #mobile-nav {
