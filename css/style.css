@@ -84,7 +84,7 @@ header {
 }
 
 .navItems li a:hover {
-    color: #fff;
+    color: red;
 }
 
 .active-nav {
@@ -156,9 +156,11 @@ header {
     color: #e1e1e1;
     letter-spacing: 3px;
     width: 45%;
-    text-align: justify;
-    font-weight: 400;
+    text-align: center;
+    font-weight: 500;
     margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 #bounce {
@@ -675,6 +677,7 @@ header {
         width: 70%;
         /* margin: 0 auto; */
     }
+
     #hero p {
         width: 58%;
     }
