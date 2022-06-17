@@ -58,7 +58,8 @@ img {
 #header {
     width: 100%;
     background-color: transparent;
-    position: fixed;
+    position: absolute;
+    top:0;
 }
 
 header {
