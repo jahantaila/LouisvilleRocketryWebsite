@@ -42,7 +42,8 @@ img {
 
 .red-tag {
     color: var(--red);
-    font-size: 22px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .btn-gray {
@@ -59,7 +60,7 @@ img {
     width: 100%;
     background-color: transparent;
     position: absolute;
-    top:0;
+    top: 0;
 }
 
 header {
@@ -257,7 +258,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     /* background-color: #333; */
     min-height: 90vh;
@@ -276,18 +277,21 @@ header {
     line-height: 155%;
 }
 
-#about .left,
+
 #about .right {
     width: 50%;
     /* border: 1px solid red; */
 }
-
+#about .left {
+    width: 50%;
+}
 #about .video {
     height: 415px;
 }
 
 #about .left {
     padding-right: 30px;
+    /* flex-basis: auto; */
 }
 
 #about .right {
@@ -296,7 +300,7 @@ header {
     position: relative;
     /* border: 1px solid white; */
     padding: 45px 20px;
-    margin: 0 50px;
+    margin: 0 20px;
 }
 
 /* .left-border {
