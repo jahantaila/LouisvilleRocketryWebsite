@@ -161,7 +161,7 @@ header {
 }
 
 #hero h1 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 #hero h2 {
@@ -170,12 +170,12 @@ header {
 
 #hero p {
     color: #e1e1e1;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     width: 55%;
     text-align: center;
     font-weight: 400;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -283,9 +283,11 @@ header {
     width: 50%;
     /* border: 1px solid red; */
 }
+
 #about .left {
     width: 50%;
 }
+
 #about .video {
     height: 415px;
 }
@@ -445,10 +447,13 @@ header {
     margin-bottom: 5px !important;
 }
 
-.half-hero p,
+
 .half-hero h1 {
+    font-weight: 600;
     text-align: center !important;
 }
+
+
 
 /* -- Event Section --*/
 #event {
