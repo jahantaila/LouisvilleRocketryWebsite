@@ -137,14 +137,16 @@ header {
 }
 
 /* -- HERO SECTION -- */
-
-#hero {
+.hero-bg {
     background: url("../img/hero-min.png") no-repeat center center/cover;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#hero {
+
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -687,7 +689,7 @@ header {
 }
 
 .team h3 {
-    font-size: 28px;
+    font-size: 18px;
     letter-spacing: 1.2px;
 }
 
@@ -1008,4 +1010,152 @@ header {
     .speaker {
         width: 75%;
     }
+}
+
+/* CONTACT PAGE */
+.pagebox {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 30px 0;
+    max-width: 1800px;
+    margin-top: -150px;
+    margin-bottom: 60px;
+}
+
+form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+form .input:last-child {
+    margin-bottom: 0px;
+}
+
+form .textarea {
+    line-height: 0px;
+    background: #171717;
+    flex-grow: 1;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 5px;
+}
+
+form .inputs,
+form .textarea {
+    position: relative;
+    flex-grow: 1;
+}
+
+form .inputs {
+    margin-right: 15px;
+}
+
+.formbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+form .input {
+    width: 100%;
+    background: #171717;
+    position: relative;
+    margin-bottom: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 5px;
+}
+
+
+form input,
+form textarea {
+    width: calc(100% - 40px);
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 15px 20px;
+    position: relative;
+    font-weight: 400;
+    z-index: 1;
+    background: #171717;
+    color: rgb(231, 231, 231);
+    font-family: "Oswald";
+    letter-spacing: 0.065em;
+}
+
+
+
+form textarea {
+    height: 276px;
+    resize: none;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+form textarea+label {
+    line-height: 22px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    form .inputs,
+    form .textarea {
+        width: 100%;
+    }
+
+    form .inputs {
+        margin-right: 0;
+    }
+
+    form .textarea {
+        margin-top: 15px;
+    }
+}
+
+.form-success {
+    background-color: #19b242;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    clear: both;
+    padding: 0;
+    transition: 0.3s ease all;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.form-success i {
+    color: #ffffff;
+}
+
+body.contact-open .form-success {
+    padding: 10px;
+    max-height: 100px;
+}
+
+#hero .email {
+    text-decoration: underline;
+    color: #DE1616;
+}
+
+.submit {
+    margin-top: 20px;
+    font-size: 18px;
+    float: right;
+    padding: 8px 23px;
+    font-family: "Oswald";
+    border: 2px solid #EF0F0F;
+    background-color: transparent;
+    color: white;
+    transition: all ease-in .2s;
+}
+
+.submit:hover {
+
+    background-color: #EF0F0F;
 }
