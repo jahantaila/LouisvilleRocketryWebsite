@@ -1013,7 +1013,7 @@ header {
 }
 
 /* CONTACT PAGE */
-.pagebox {
+/* .pagebox {
     width: 60%;
     margin: auto;
     position: relative;
@@ -1158,4 +1158,4 @@ body.contact-open .form-success {
 .submit:hover {
 
     background-color: #EF0F0F;
-}
+} */
