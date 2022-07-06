@@ -1,138 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!--HOVER CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Hover.css CDN-->
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--animate.style-->
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--animate.style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--typeit.js-->    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
-    <!--typeit.js-->
+        <!--AOS JS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+        <title>Louisville Rocketry | Home</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <!--Favicon.ico-->
-    <title>Louisville Rocketry | Home</title>
-</head>
-
-<body>
-    <div id="mobile-nav">
-        <i class="fa-solid fa-xmark fa-xl" id="cross"></i>
-        <ul>
-            <li><a href="home.html" class="active-nav">HOME</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="outreach.html">OUTREACH</a></li>
-            <li><a href="sponsor.html">SPONSORS</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="join.html" class="border-red">JOIN</a></li>
-        </ul>
-    </div>
-
-    <div id="header">
-        <header>
-            <a href="index.html">
-                <img src="./img/logo.png" alt="LOGO" class="hvr-grow" />
-            </a>
-            <ul class="navItems">
+        
+    </head>
+    <body>
+        <div id="mobile-nav">
+            <i class="fa-solid fa-xmark fa-xl" id="cross"></i>
+            <ul>
                 <li><a href="index.html" class="active-nav">HOME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="outreach.html">OUTREACH</a></li>
                 <li><a href="sponsor.html">SPONSORS</a></li>
                 <li><a href="team.html">TEAM</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="join.html" class="border-red hvr-grow-shadow ">JOIN</a></li>
+                <li ><a href="join.html" class="border-red ">JOIN</a></li>
             </ul>
-            <i class="fa-solid fa-bars fa-lg" style="color: white; height: 30px; width: 30px" id="hamburger"></i>
-        </header>
-    </div>
-    <div id="hero" class="hero-bg">
-        <img src="./img/downarrow.svg" style="height: 30px; width: 30px" id="bounce">
-        <h1><img src="./img/herotitletext.svg" alt="" class="animate__animated animate__backInDown" /></h1>
-        <p class="animate__animated animate__fadeInUp">
-            We are a group of highschoolers passionate about creating
-            rockets and pursuing missions in aerospace engineering. We
-            emphasize core engineering skills.
-        </p>
-        <a href="#about-us" class="btn btn-red hvr-grow">LEARN MORE</a>
-    </div>
-    <section id="about-us">
-        <div id="about">
-            <div class="left">
-                <h3 class="red-tag" data-aos="fade-right" data-aos-duration="800">ABOUT US</h3>
-                <h2 data-aos="fade-up">We launch Competitive and
-                    experimental <span style="color: red;">Rockets</span>.</h2>
-                <script src="/js/competitiveanimation.js"></script>
-                <p data-aos="fade-up" data-aos-duration="1200">
-                    Louisville Rocketry is a student-led engineering team at
-                    duPont Manual High School. Founded in 2017, we are
-                    passionate about designing, testing, building, and
-                    launching rockets. With multiple successful seasons and
-                    experienced team members, our rocketry team is always
-                    looking to take the next step forward.
-                </p>
-            </div>
-            <div class="right" data-aos="zoom-in-down" data-aos-duration="800">
-                <!-- <img style="pointer-events: none;" src="./img/left-border.png" class="left-border" alt="" />
-                <img style="pointer-events: none;" src="./img/right-border.png" class="right-border" alt="" /> -->
-                <iframe width="560" height="412"
-                    src="https://www.youtube.com/embed/A2ZZnCD8i9M?autoplay=0&showinfo=0&controls=0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    class="video"></iframe>
-            </div>
         </div>
-    </section>
 
-
-
-    <div id="footer">
-        <div class="footer-nav">
-            <div class="social-icons">
-                <a target="_blank" href="https://www.instagram.com/louisvillerocketry/">
-                    <i class="fa-brands fa-instagram fa-xl"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/louisvillerocketry/">
-                    <i class="fa-brands fa-facebook fa-xl"></i>
-                </a>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="#">HOME</a></li>
+        <div id="header">
+            <header>
+                <a href="index.html"><img src="./img/logo.png" alt="Logo" class = "hvr-pulse-grow"/></a>
+                <ul class="navItems">
+                    <li><a href="index.html" class="active-nav">HOME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="outreach.html">OUTREACH</a></li>
                     <li><a href="sponsor.html">SPONSORS</a></li>
                     <li><a href="team.html">TEAM</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="join.html" class="border-red">JOIN</a></li>
                 </ul>
-            </div>
-            <a href="#" class="btn btn-gray">JOIN</a>
+                <i
+                    class="fa-solid fa-bars fa-lg"
+                    style="color: white; height: 30px; width: 30px"
+                    id="hamburger"
+                ></i>
+            </header>
         </div>
-        <p>© 2022 Louisville Rocketry</p>
-    </div>
+        <div id="hero">
+            <i
+                class="fa-solid fa-arrow-down fa-2xl"
+                style="color: white; height: 30px; width: 30px"
+                id="bounce"
+            ></i>
+            <h1><img src="./img/hero-text.png" alt="louisville" class = " animate__animated animate__zoomInDown animate__slow" /></h1>
+            <h2><img src="./img/hero-text2.png" alt="rocketry" class = " animate__animated animate__zoomInDown animate__slow" /></h2>
+            <p class = "animate__animated animate__zoomInRight animate__slow ">
+                We are a group of highschoolers passionate about creating
+                rockets and pursuing missions in aerospace engineering. Our team
+                emphasizes core engineering skills and adaptive problem solving.
+            </p>
+            <a href="#about" class="btn btn-red animate__animated animate__jackInTheBox animate__slow hvr-pulse-grow">LEARN MORE</a>
+        </div>
+        <section id="about-us">
+            <div id="about">
+                <div class="left">
+                    <h3 class="red-tag aos-animate" data-aos="fade-right" data-aos-duration="700" >ABOUT US</h3>
+                    <h2 class = "aos-animate" data-aos="zoom-out-right" data-aos-duration="1000">We launch <span id="competetivetext" style = "color: red !important; "></span> and experimental 
+                        <span style = "color: red !important; " >rockets</span>.</h2>
+                    <script src="js/typinganimation.js"></script>
+                    <p class = "aos-animate" data-aos = "zoom-in-up" data-aos-duration = "1300">
+                        Louisville Rocketry is a student-led engineering team at
+                        DuPont Manual High School. Founded in 2017, we are
+                        passionate about designing, testing, building, and
+                        launching rockets. With multiple successful seasons and
+                        experienced team members, our rocketry team is always
+                        looking to take the next step forward.
+                    </p>
+                </div>
+                <div class="right aos-animate" data-aos = "zoom-in-up" data-aos-duration="1000">
+                    <img
+                        src="./img/left-border.png"
+                        class="left-border"
+                        alt=""
+                    />
+                    <img
+                        src="./img/right-border.png"
+                        class="right-border"
+                        alt=""
+                    />
+                    <iframe
+                        width="560"
+                        height="412"
+                        src="https://www.youtube.com/embed/A2ZZnCD8i9M"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow=" autoplay; clipboard-write;  gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="video"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
 
-    </div>
-    <script src="/js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+        <div id="footer">
+            <div class="footer-nav">
+                <div class="social-icons">
+                    <a target="_blank" href="http://instagram.com/louisvillerocketry"><i class="fa-brands fa-instagram fa-xl hvr-bounce-in "></i></a>
+                    <a target="_blank" href="http://facebook.com/louisvillerocketry"><i class="fa-brands fa-facebook fa-xl hvr-bounce-in"></i></a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="outreach.html">OUTREACH</a></li>
+                        <li><a href="sponsor.html">SPONSORS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <a href="join.html" class="btn btn-gray hvr-bounce-to-left">JOIN</a>
+            </div>
+            <p>© 2022 Louisville Rocketry</p>
+        </div>
+        <script src="./script.js"></script>
+        <!--Init aos js-->
+        <script>
+            AOS.init();
+          </script>
 
+
+    </body>
 </html>

@@ -12,17 +12,32 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!--HOVER CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--animate.style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--typeit.js-->    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
+        <!--AOS JS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
         <title>Louisville Rocketry | Team</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     </head>
     <body>
+
         <div id="mobile-nav">
             <i class="fa-solid fa-xmark fa-xl" id="cross"></i>
             <ul>
-                <li><a href="index.html" class="active-nav">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="outreach.html">OUTREACH</a></li>
                 <li><a href="sponsor.html">SPONSORS</a></li>
-                <li><a href="team.html">TEAM</a></li>
+                <li><a href="team.html" class="active-nav">TEAM</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="join.html" class="border-red">JOIN</a></li>
             </ul>
@@ -30,13 +45,13 @@
 
         <div id="header">
             <header>
-                <a href="#"><img src="./img/logo.png" alt="Logo" /></a>
+                <a href="index.html"><img src="./img/logo.png" alt="Logo" class = "hvr-pulse-grow" /></a>
                 <ul class="navItems">
-                    <li><a href="index.html" class="active-nav">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="outreach.html">OUTREACH</a></li>
                     <li><a href="sponsor.html">SPONSORS</a></li>
-                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="team.html" class="active-nav">TEAM</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="join.html" class="border-red">JOIN</a></li>
                 </ul>
@@ -48,27 +63,27 @@
             </header>
         </div>
         <div id="hero" class="team">
-            <h3 class="red-tag">TEAM</h3>
-            <h1>Our Success lies behind a great team</h1>
-            <p>
+            <h3 class="red-tag animate__animated animate__zoomInDown animate__slow">TEAM</h3>
+            <h1 class = "animate__animated animate__zoomInDown animate__slow">Our Success lies behind a great team</h1>
+            <p class = "animate__animated animate__zoomInRight animate__slow">
                 Our innovative team has worked hard to launch successful rockets
                 and without each and every memeber, it could not have been done.
             </p>
-            <a href="#" class="btn btn-red">JOIN</a>
+            <a href="join.html" class="btn btn-red animate__animated animate__bounceInRight hvr-pulse-grow">JOIN</a>
         </div>
 
         <div id="meet-team">
-            <h1>Meet the Team</h1>
+            <h1 class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="800">Meet the Team</h1>
             <div class="meet-team_members">
                 <div class="meet-team_members_member">
                     <div class="left">
-                        <img src="./img/team-richard.png" alt="" />
-                        <h4>Richard Lian</h4>
-                        <p class="red-tag">President, Cheif Engineer</p>
+                        <img src="./img/team-richard.png" alt="richard" class = "aos-animate" data-aos="zoom-in" data-aos-duration="1200"/>
+                        <h4 class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="900">Richard Lian</h4>
+                        <p class="red-tag aos-animate" data-aos="zoom-in-left" data-aos-duration="900" >President, Chief Engineer</p>
                     </div>
                     <div class="right">
-                        <p>
-                            Richard Lian is currently a sophomore at duPont
+                        <p class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="1000">
+                           <span style = "color: red !important; font-weight: 900 !important; " id = "richard">  </span> is currently a junior at duPont
                             Manual High School. As the chief engineer, he
                             oversees the design, manufacturing, and testing of
                             the rocket. He founded the rocketry team 5 years ago
@@ -78,20 +93,32 @@
                             qualification into the national competition this
                             past season.
                         </p>
+
+                        <script> 
+                        new TypeIt("#richard", {
+                        strings: "Richard Lian",
+                        speed: 150,
+                        waitUntilVisible: true,
+                        }).go();
+                            
+                        </script>
+
+
+
                     </div>
                 </div>
 
                 <div class="meet-team_members_member">
                     <div class="left">
-                        <img src="./img/team-himanish.png" alt="" />
-                        <h4>Himanish Lingamaneni</h4>
-                        <p class="red-tag">
+                        <img src="./img/team-himanish.png" alt="" class = "aos-animate" data-aos="zoom-in" data-aos-duration="1200"/>
+                        <h4 class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="900">Himanish Lingamaneni</h4>
+                        <p class="red-tag aos-animate" data-aos="zoom-in-left" data-aos-duration="900" >
                             Vice President, Director of Test Operations
                         </p>
                     </div>
                     <div class="right">
-                        <p>
-                            Himanish Lingamaneni is currently a sophomore at
+                        <p class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="1000">
+                          <span style = "color: red !important; font-weight: 900 !important; " id = "him"></span> is currently a sophomore at
                             duPont Manual High School. He has been a member of
                             the rocketry team for the past 4 years. He is active
                             in flight testing data analysis, and collaboration
@@ -99,20 +126,32 @@
                             charge of video-editing for any team video projects.
                             In his free time, he has no free time
                         </p>
+
+                        <script> 
+                            new TypeIt("#him", {
+                            strings: "Himanish Lingamaneni",
+                            speed: 150,
+                            waitUntilVisible: true,
+                            }).go();
+                                
+                            </script>
+                        
+
+
                     </div>
                 </div>
 
                 <div class="meet-team_members_member">
                     <div class="left">
-                        <img src="./img/team-vallabh.png" alt="" />
-                        <h4>Vallabh Ramesh</h4>
-                        <p class="red-tag">
+                        <img src="./img/team-vallabh.png" alt="" class = "aos-animate" data-aos="zoom-in" data-aos-duration="1200" />
+                        <h4 class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="900">Vallabh Ramesh</h4>
+                        <p class="red-tag aos-animate" data-aos="zoom-in-left" data-aos-duration="900" >
                             VP of Build and Network Operations
                         </p>
                     </div>
                     <div class="right">
-                        <p>
-                            Vallabh Ramesh is a student in the Jefferson County
+                        <p class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <span style = "color: red !important; font-weight: 900 !important; "  id = "val"> </span> is a student in the Jefferson County
                             school district. Ever since he got involved in
                             Rocketry, there was no looking back. He has always
                             had the fascination for building, and putting things
@@ -125,30 +164,125 @@
                             .
                         </p>
                     </div>
+                    <script> 
+                        new TypeIt("#val", {
+                        strings: "Vallabh Ramesh",
+                        speed: 150,
+                        waitUntilVisible: true,
+                        }).go();
+                            
+                        </script>
+
+                </div>
+
+                <div id="jahan" class="meet-team_members_member" class = "aos-animate" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="left">
+                        <img src="https://bit.ly/3P13aQT" alt="jahan" class = "aos-animate" data-aos="zoom-in" data-aos-duration="1200" />
+                    </div>
+                    <div id="jahan-right" class="right" class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="1000">
+                        <h4>Jahan Taila</h4>
+                        <p class="red-tag">
+                            Chief Technology Officer (CTO) | Lead Web Developer
+                        </p>
+                        <p>
+                            <span style = "color: red !important; font-weight: 900 !important; " id = "jahantaila" ></span>  is a sophomore at DuPont Manual High School. He enjoys learning new skills and is highly passionate about technology and programming. As the CTO, Jahan oversees the testing and the successful launch of rockets. 
+                            Jahan's responsibilities include rocket programming, statistical analysis of rocket data, and the development of rocket software.
+                            Jahan is also in charge of simulating rocket launches as well as developing and maintaining the Louisville Rocketry Website. 
+                            
+                        </p>                        
+                            
+                        <script> 
+                            new TypeIt("#jahantaila", {
+                            strings: "Jahan Taila",
+                            speed: 150,
+                            waitUntilVisible: true,
+                            }).go();
+                                    
+                            </script>
+                    </div>
                 </div>
             </div>
+        </div>
+                    
+        <div id="web-dev"> 
+            <div class="web-dev-wrapper"> 
+                <div class="web-dev_card" class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="1000">    
+                    <img src="./img/purple.png"  />
+                    <h2>Nathan Anil</h2>
+                    <div class="red-tag">Head Web Design & Development</div>
+                </div>
+                <div class="web-dev_card" class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="1000" > 
+
+                    <img src="./img/blue.png"  />
+                    <h2>John Doe</h2>
+                    <div class="red-tag">Head Of Something</div>
+                </div>
+                <div class="web-dev_card" class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <img src="./img/green.png" />
+                    <h2>Joe Doe</h2>
+                    <div class="red-tag">Head of Alien Technology</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="members">
+            <h1 class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="800">Members</h1>
+            <ul class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="1500">
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+                <li>John Smith</li>
+            </ul>
         </div>
 
         <div id="footer">
             <div class="footer-nav">
                 <div class="social-icons">
-                    <i class="fa-brands fa-instagram fa-xl"></i
-                    ><i class="fa-brands fa-facebook fa-xl"></i>
+                    <a target="_blank" href="http://instagram.com/louisvillerocketry"><i class="fa-brands fa-instagram fa-xl hvr-bounce-in"></i></a>
+                    <a target="_blank" href="http://facebook.com/louisvillerocketry"><i class="fa-brands fa-facebook fa-xl hvr-bounce-in"></i></a>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">OUTREACH</a></li>
-                        <li><a href="#">SPONSORS</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="outreach.html">OUTREACH</a></li>
+                        <li><a href="sponsor.html">SPONSORS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-                <a href="#" class="btn btn-gray">JOIN</a>
+                <a href="join.html" class="btn btn-gray hvr-bounce-to-left">JOIN</a>
             </div>
             <p>© 2022 Louisville Rocketry</p>
         </div>
         <script src="./script.js"></script>
+
+         <!--Init aos js-->
+         <script>
+            AOS.init();
+          </script>
+
+
     </body>
 </html>

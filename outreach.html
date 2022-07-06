@@ -12,14 +12,23 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!--HOVER CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--animate.style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--typeit.js-->    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
+        <!--AOS JS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-        
         <title>Louisville Rocketry | Outreach</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     </head>
     <body>
-        
         <div id="mobile-nav">
             <i class="fa-solid fa-xmark fa-xl" id="cross"></i>
             <ul>
@@ -35,7 +44,7 @@
 
         <div id="header">
             <header>
-                <a href="#"><img src="./img/logo.png" alt="Logo" /></a>
+                <a href="index.html"><img src="./img/logo.png" alt="Logo" class = "hvr-pulse-grow" /></a>
                 <ul class="navItems">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
@@ -44,8 +53,8 @@
                     </li>
                     <li><a href="sponsor.html">SPONSORS</a></li>
                     <li><a href="team.html">TEAM</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#" class="border-red">JOIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="join.html" class="border-red">JOIN</a></li>
                 </ul>
                 <i
                     class="fa-solid fa-bars fa-lg"
@@ -55,25 +64,25 @@
             </header>
         </div>
         <div id="hero" class="outreach half-hero">
-            <h3 class="red-tag">COMMUNITY</h3>
-            <h1>Outreach Events</h1>
-            <p>Some of the work our team has done to engage our community!</p>
+            <h3 class="red-tag animate__animated animate__zoomInDown animate__slow">COMMUNITY</h3>
+            <h1 class = "animate__animated animate__zoomInDown animate__slow">Outreach Events</h1>
+            <p class = "animate__animated animate__zoomInRight animate__slow">Some of the work our team has done to engage our community!</p>
         </div>
 
-        <div id="event">
+        <div id="event" >
             <div class="event-container">
                 <div class="event-details">
                     <div class="left">
-                        <h1>
-                            <span class="blue-txt">Blue Origin</span> Speaker
+                        <h1 class = "animate__animated animate__bounceInLeft">
+                            <span class="blue-txt ">Blue Origin</span> Speaker
                             Event
                         </h1>
-                        <div class="speaker">
+                        <div class="speaker animate__animated animate__pulse animate__infinite">
                             <img src="./img/speaker.png" alt="" />
                             <div class="speaker-details">
                                 <div>
                                     <h2>
-                                        <span>Eduardo Seyffert </span
+                                        <span class = "hvr-bounce-in" ><a style = "color: white !important; " target = "_blank" href= "https://www.linkedin.com/in/eseyffert/">Eduardo Seyffert</a> </span
                                         ><i
                                             class="fa-brands fa-linkedin fa-sm"
                                         ></i>
@@ -99,24 +108,39 @@
                         ></iframe>
                     </div>
                 </div>
-                <p class="link">
+                <p class = "aos-animate" data-aos="fade-right" data-aos-duration="600">
                     https://manualredeye.com/93268/news/manualnews/blue-origin-executive-joins-the-rocketry-club-for-a-qa/
                 </p>
             </div>
         </div>
 
         <div id="rocket">
+            <h1 class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="800">Kentucky Science Center's Engineering Day</h1>
+
             <div class="rocket-wrap">
                 <div class="left">
-                    <p>
+                    <h2 class = "aos-animate" data-aos="zoom-in-right" data-aos-duration="1000">
+                        In partnership with
+                        <span class="orange-txt"></span>
+
+                        <script>new TypeIt(".orange-txt", {
+                            strings: "River City Rocketry",
+                            speed: 75,
+                            waitUntilVisible: true,
+                          }).go();
+                          </script>
+
+
+                    </h2>
+                    <p style = "padding-top: 3% !important; " class = "aos-animate" data-aos="zoom-in-right" data-aos-duration="780">
                         River City Rocketry is a nationally ranked collegiate
                         rocket team that designs, manufactures, and launches
                         high powered rockets.
                     </p>
-                    <img src="./img/rocketbadge.png" alt="" />
+                    <img class = "aos-animate" data-aos="zoom-out-up" data-aos-duration = "1000" src="./img/rocketbadge.png" alt="" />
                 </div>
                 <div class="right">
-                    <img src="./img/rocketimg.png" alt="" />
+                    <img  class = "aos-animate" data-aos="zoom-out-up" data-aos-duration = "1000" src="./img/rocketimg.png" alt="" />
                 </div>
             </div>
         </div>
@@ -124,23 +148,30 @@
         <div id="footer">
             <div class="footer-nav">
                 <div class="social-icons">
-                    <i class="fa-brands fa-instagram fa-xl"></i
-                    ><i class="fa-brands fa-facebook fa-xl"></i>
+                    <a target="_blank" href="http://instagram.com/louisvillerocketry"><i class="fa-brands fa-instagram fa-xl hvr-bounce-in"></i></a>
+                    <a target="_blank" href="http://facebook.com/louisvillerocketry"><i class="fa-brands fa-facebook fa-xl hvr-bounce-in"></i></a>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">OUTREACH</a></li>
-                        <li><a href="#">SPONSORS</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="outreach.html">OUTREACH</a></li>
+                        <li><a href="sponsor.html">SPONSORS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-                <a href="#" class="btn btn-gray">JOIN</a>
+                <a href="join.html" class="btn btn-gray hvr-bounce-to-left">JOIN</a>
             </div>
             <p>© 2022 Louisville Rocketry</p>
         </div>
         <script src="./script.js"></script>
+
+         <!--Init aos js-->
+         <script>
+            AOS.init();
+          </script>
+
+
     </body>
 </html>

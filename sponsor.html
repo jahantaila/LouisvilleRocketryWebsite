@@ -12,14 +12,24 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!--HOVER CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--animate.style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!--typeit.js-->    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typeit@8.5.5/dist/index.umd.js"></script>
+        <!--AOS JS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
+        <title>Louisville Rocketry | Sponsors</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
-
-        <title>Louisville Rocketry | Sponsor</title>
     </head>
     <body>
-        <img src="./img/hero-left.png" class="hero-left" alt="" />
+        
         <div id="mobile-nav">
             <i class="fa-solid fa-xmark fa-xl" id="cross"></i>
             <ul>
@@ -35,7 +45,7 @@
 
         <div id="header">
             <header>
-                <a href="#"><img src="./img/logo.png" alt="Logo" /></a>
+                <a href="index.html"><img src="./img/logo.png" alt="Logo" class = "hvr-pulse-grow" /></a>
                 <ul class="navItems">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
@@ -57,26 +67,38 @@
             </header>
         </div>
         <div id="hero" class="sponsor half-hero">
-            <h3 class="red-tag">SPONSORS</h3>
-            <h1>Thank you to all of our incredible sponsors</h1>
-            <p>Without the contributions from our sponsors The Lousville Rocketry Team would not be possible. Sponsors enable us to build and compete. </p>
-            <a href="#" class="btn btn-red">SPONSOR US</a>
+            <h3 class="red-tag animate__animated animate__zoomInDown animate__slow">SPONSORS</h3>
+            <h1 class = "animate__animated animate__zoomInDown animate__slow">Thank you to all of our incredible sponsors</h1>
+            <p class = "animate__animated animate__zoomInRight animate__slow">Without the contributions from our sponsors The Lousville Rocketry Team would not be possible. Sponsors enable us to build and compete. </p>
+            <a href="contact.html" class="btn btn-red animate__animated animate__bounceInRight hvr-pulse-grow">SPONSOR US</a>
         </div>
         <div id="logos">
             <div class="top">
-                <img src="./img/sponsor1.png" alt="" />
-                <img src="./img/sponsor2.png" alt="" />
+                <img src="./img/sponsor1.png" alt="HUMANA" class = "animate__animated animate__bounceInLeft "/>
+                <img src="./img/sponsor2.png" alt="SPECTRUM TRACKING" class = "animate__animated animate__bounceInRight "/>
             </div>
             <div class="bottom">
-                <img src="./img/sponsor3.png" alt="" />
+                <img src="./img/sponsor3.png" alt="ATLAS"  class = "animate__animated animate__bounceInDown "/>
             </div>
         </div>
 
-        <div id="private-sponsors">
-            <img src="./img/SPONSOR-TRIANGLE.png" class="s-triangle" alt="" />
-            <h1>Private Sponsors</h1>
-            <div class="private-sponsor_details">
-                <h3 class="red-tag">Dr. Clinton Kelly</h3>
+        <div id="private-sponsors" >
+            
+            <img src="./img/SPONSOR-TRIANGLE.png" class="s-triangle" alt="" style = "pointer-events: none !important;"/>
+            <h1 class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="800" >Private Sponsors</h1>
+            <div class="private-sponsor_details aos-animate" data-aos="zoom-in-left" data-aos-duration="800">
+                <h3 class="red-tag" id = 'kelly'></h3>
+
+                <script>
+                    new TypeIt("#kelly", {
+                strings: "Dr. Clinton Kelly",
+                speed: 90,
+                waitUntilVisible: true,
+                }).go();
+
+                </script>
+
+
                 <p>
                     -Former Senior VP at Science Applications International
                     Corporation (SAIC)
@@ -90,10 +112,10 @@
             </div>
 
             <div id="sponsors-thanks">
-                <h1>Special Thanks To</h1>
+                <h1 class = "aos-animate" data-aos="zoom-in-down" data-aos-duration="1200">Special Thanks To</h1>
                 <div>
-                    <img src="./img/thanks-img1.png" alt="" />
-                    <img src="/img/thanks-img2.png" alt="" />
+                    <img src="./img/thanks-img1.png" alt="river city rocketry" class = "aos-animate" data-aos="zoom-in-left" data-aos-duration="800" />
+                    <img src="./img/thanks-img2.png" alt="masa" class = "aos-animate" data-aos="zoom-in-right" data-aos-duration="800"/>
                 </div>
             </div>
         </div>
@@ -101,23 +123,30 @@
         <div id="footer">
             <div class="footer-nav">
                 <div class="social-icons">
-                    <i class="fa-brands fa-instagram fa-xl"></i
-                    ><i class="fa-brands fa-facebook fa-xl"></i>
+                    <a target="_blank" href="http://instagram.com/louisvillerocketry"><i class="fa-brands fa-instagram fa-xl hvr-bounce-in"></i></a>
+                    <a target="_blank" href="http://facebook.com/louisvillerocketry"><i class="fa-brands fa-facebook fa-xl hvr-bounce-in"></i></a>
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="projects.html">PROJECTS</a></li>
                         <li><a href="outreach.html">OUTREACH</a></li>
                         <li><a href="sponsor.html">SPONSORS</a></li>
                         <li><a href="team.html">TEAM</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
-                </div> 
-                <a href="join.html" class="btn btn-gray">JOIN</a>
+                </div>
+                <a href="join.html" class="btn btn-gray hvr-bounce-to-left">JOIN</a>
             </div>
             <p>© 2022 Louisville Rocketry</p>
         </div>
         <script src="./script.js"></script>
+
+        <!--Init aos js-->
+        <script>
+            AOS.init();
+          </script>
+
+
     </body>
 </html>
