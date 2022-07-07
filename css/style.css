@@ -855,7 +855,7 @@ header {
 
 input[type=text]
 {
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
@@ -863,21 +863,21 @@ input[type=text]
 
 input[type=email]
 {
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
 }
 input[type=tel]
 {
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
 }
 
 #contact textarea {
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
@@ -888,7 +888,7 @@ input[type=tel]
 #contact textarea::placeholder {
     font-size: 18px;
     letter-spacing: 1.5px;
-    font-family: "Oswald";
+    
 }
 #contact textarea {
     width: 100%;
@@ -897,13 +897,19 @@ input[type=tel]
 #contact .right {
 }
 .form-btn {
-    margin-top: 20px;
+
     display: flex;
-    width: 90%;
-    justify-content: flex-end;
-}
-.form-btn a {
+    width: 100px;
+    justify-content: center;
+    float: right;
     color: white;
+    background-color: #121212;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-family: "Oswald";
+    font-size: 17px;
+    letter-spacing: 0.065em;
 }
 
 /* ---- JOIN PAGE ----- */
@@ -979,10 +985,7 @@ input[type=tel]
     width: 100%;
     height: 180px;
 }
-#join .form-btn {
-    display: flex;
-    justify-content: flex-start;
-}
+
 .top-p {
     z-index: 99;
 }
@@ -1175,6 +1178,7 @@ input[type=tel]
     #join {
         padding-bottom: 30px;
         height: 130vh;
+        margin-bottom: 50px;
     }
     .sponsor{
         margin-top: 100px;
