@@ -967,7 +967,7 @@ input[type=tel]
 #join textarea {
     padding: 19px 11px;
     background: #171717;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
